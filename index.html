@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="STYLE.CSS">
+    <title>Land page</title>
+</head>
+<body>
+    <section class="sec"> <!--começo sessao-->
+        <header> <!--inicio header-->
+            <a href="index.html"><img src="imagens/logo.png" alt="" class="logo"></a>
+            <ul>
+               
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Produto</a></li>
+                <li><a href="#">Novidades</a></li>
+                <li><a href="#">Informações</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+
+        </header><!--fim header-->
+
+        <div class="content"> <!--incio de content-->
+            <div class="textbox"> <!--inicio textbook-->
+
+                <h2>That's what <br><span>I like</span></h2>
+                <p>lorem lorem lorem</p>
+                <a href="#">View all products</a>
+
+
+
+            </div> <!--fim textbook-->
+
+            <div class="imgbox"> <!--inico imgbox-->
+               
+                <img src="imagens/pepsi001.png" alt="" class="pepsi"> 
+               
+            </div> <!--fim imgbox-->
+        </div> <!--fim de content-->
+        
+        <ul class="thumb"> <!--incio thumb-->
+            <li><img src="imagens/pepsi001.png" onclick="imgSlider('imagens/pepsi001.png');changeBgcolor('#0062be')" alt=""></li>
+            <li><img src="imagens/pepsi002.png" onclick="imgSlider('imagens/pepsi002.png');changeBgcolor('#e60c2c')"alt=""></li>
+            <li><img src="imagens/pepsi003.png"  onclick="imgSlider('imagens/pepsi003.png');changeBgcolor('#1e1e1e')"alt=""></li>
+        </ul> <!--fim thumb-->
+
+        <ul class="sci"> <!--inicio sci-->
+            <li> <a href="#"><img src="imagens/facebook.png" alt=""></a></li>
+            <li> <a href="#"><img src="imagens/instagram.png" alt=""></a></li>
+            <li> <a href="#"><img src="imagens/twitter.png" alt=""></a></li>
+        </ul> <!--fim sci-->
+
+    <script>
+        function imgSlider(anything){
+            document.querySelector('.pepsi').src = anything
+        }
+        function changeBgcolor(color){
+            const sec = document.querySelector('.sec');
+            sec.style.background = color;
+
+        }
+    </script>
+
+
+
+
+
+
+    </section> <!--fim sessao-->
+</body>
+</html>
